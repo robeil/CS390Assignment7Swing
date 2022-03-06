@@ -92,6 +92,7 @@ public class StringUtility extends JFrame {
         frame.getContentPane().add(textOutput, gbc_textOutput);
         textOutput.setColumns(10);
     }
+
     //count letters event handler
     class CountEventHandler implements ActionListener {
         @Override
@@ -108,8 +109,10 @@ public class StringUtility extends JFrame {
         textOutput.setText(outPut);
     }
     }
+
     //reverse letters event handler
-    class ReverseEventHandler implements ActionListener{ @Override
+    class ReverseEventHandler implements ActionListener{
+        @Override
     public void actionPerformed(ActionEvent e) {
         //getting the user input from the text field
         userInput = textInput.getText();
@@ -118,8 +121,10 @@ public class StringUtility extends JFrame {
         textOutput.setText(rev);
     }
     }
+
     //Remove duplicates letters handler
-    class RemoveEventHandler implements ActionListener{ @Override
+    class RemoveEventHandler implements ActionListener{
+        @Override
     public void actionPerformed(ActionEvent e) {
         //getting the user input
         userInput = textInput.getText();
@@ -138,6 +143,7 @@ public class StringUtility extends JFrame {
         textOutput.setText(sb.toString());
     }
     }
+
     //main method to run the application
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
